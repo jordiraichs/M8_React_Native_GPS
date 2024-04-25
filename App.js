@@ -28,6 +28,7 @@ export default function App() {
       }
 
       // obtenim les dades de localització objecte: Location.LocationObject
+      // https://docs.expo.dev/versions/latest/sdk/location/#locationobject
       let coordenades = (await Location.getCurrentPositionAsync({}));
      
       setLocation(coordenades.coords);
